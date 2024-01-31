@@ -7,15 +7,28 @@ Collect financial transactions of individuals, draw conclusions from these trans
 
 ## Other apps
 
-## Components
+## Fundamental components
 
 ### Parser
 
 A parser to process transactions data from different sources, transform them into workable data and write this data to a database.
 
+Sources:
+
+- MT940 file
+- PSD2 broker
+
+Sinks:
+
+- Database
+
 ### Pre-processor
 
 A pre-processor that takes parsed data and transforms it into a dataset that can be used to train a classification model.
+
+### Transaction classification
+
+A model that classifies a financial transaction.
 
 ### Data ingestion interface
 
